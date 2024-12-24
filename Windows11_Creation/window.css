@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.taskbar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between; /* To align left and right sections */
+    align-items: center; /* Vertically align taskbar items */
+    background-color: #f3f3f3;
+    padding: 8px 20px; /* Add padding for spacing */
+    z-index: 110;
+}
+
+.taskbar-left {
+    display: flex;
+    justify-content: center; /* Center items in the left section */
+    flex-grow: 1; /* Take up remaining space */
+    margin-left: 100px;
+}
+
+.taskbar-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Vertically align the icons */
+}
+
+.taskbar-icons img {
+    height: 30px; /* Set all icons to the same size */
+    width: 30px; /* Maintain consistent width */
+    margin: 0 10px; /* Add space between icons */
+}
+
+.taskbar img {
+    height: 30px; /* Set the size of all taskbar icons */
+    margin: 0 10px; /* Add space between icons */
+}
+
+.taskbarright {
+    display: flex;
+    justify-content: flex-end; /* Align the right section to the end */
+    align-items: center;
+    height: 35px; /* Increase the height of the right section */
+}
+
+.taskbarright img {
+    height: 40px; /* Increase the size of the image inside the right section */
+}
+
+.favicon {
+    cursor: pointer;
+}
+
+.startmenu {
+    position: absolute;
+    bottom: -650px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img {
+    height: 535px;
+    border-radius: 8px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Space between icons */
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 25px; /* Adjust as needed */
+}
+
+.icons img {
+    width: 41px; /* Set icon size */
+    height: 40px; /* Set icon size */
+}
+
+.icons div {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
